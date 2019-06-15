@@ -792,6 +792,10 @@ model.summary()
 # (**Note**: Since neither approach had any positive impact, we recommend remaining with the control approach with zero cost for the company)
 # - Incentive-Based Approach has the most impact on customer's <u>recommendations</u> of the company
 # 
+# <br>
+# <br>
+# 
+# 
 # **Behavioural Analysis:**
 # 
 # Upon our recommendations to implement **Incentive-Based Approach**, and based on a sample size of 384 survey, this implies that there is only 0.26% chance of winning (excluding any additional surveys) since only one customer will win the contest. 
