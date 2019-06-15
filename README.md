@@ -5,6 +5,8 @@ Applying regression modeling on Customer Surveys.
 
 <img src="Customer%20Survey.jpg">
 
+Customer survey has always been a very popular tool for retailers to determine the image of their brand, based on many different factors. These factors can include the perception of the company, the comprehension of the company, Customer's willingness to recommend the company, and etc. In order to productively improve the quality of survey results, companies can take advantage of different approaches for their call center, and  measure the effectiveness of each approach and their associated cost. Also, the effective 
+
 The dataset I will be using is from a mock call center that emulates a real world customer survey.
 
 I have also provided the direct link below if you wish to view the dataset I used to build my model:
