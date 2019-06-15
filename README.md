@@ -15,4 +15,4 @@ I have also provided the direct link below if you wish to view the dataset I use
 
 This project was completed using Jupyter Notebook and Python with Pandas, NumPy, Matplotlib, Seaborn, Scipy, Statsmodels and Patsy.
 
-This project was an interesting way to use Python for traditional statistical modeling. In the future, we will continue to apply other statistical models for data profiling.
+This project was an interesting way to use Python for traditional statistical modeling. In the future, I will continue to apply other statistical models for data profiling.
