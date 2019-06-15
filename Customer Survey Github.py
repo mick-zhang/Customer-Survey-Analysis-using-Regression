@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python
 # coding: utf-8
 
 # # 1 Business Problem
@@ -60,7 +60,7 @@
 #             - Sock bands that always stay up
 #             - Anti-sweat technology
 #             - Socks that never get holes
-#             - Socks that change colour so you never wear mismatched socks again            
+#             - Socks that change colour so you never wear mismatched socks again (<u>Correct Answer</u>)        
 #             - Unsure
 #     - Recommendations of the company
 #         - Question 6: I have a favourable opinion of ABC Sock Company (ratings 1-7)
@@ -91,7 +91,7 @@ df.head(5)
 df.info()
 
 
-# **After taking a quick look at the data, we see that there are no missing data.**
+# After taking a quick look at the data, we see that there are no missing data.
 
 # # 3 Data Cleaning
 
@@ -215,7 +215,7 @@ plt.show()
 # In[9]:
 
 
-model = ols("Q2 ~ Group", data).fit(cov_type='HC3') #Allow Heteroscedasticity (fewer assumptions)
+model = ols("Q2 ~ Group", data).fit(cov_type='HC3') # Allow Heteroscedasticity (fewer assumptions)
 model.summary()
 
 
@@ -319,7 +319,7 @@ plt.show()
 # In[13]:
 
 
-model = ols("Q3 ~ Group", data).fit(cov_type='HC3')
+model = ols("Q3 ~ Group", data).fit(cov_type='HC3') # Allow Heteroscedasticity (fewer assumptions)
 model.summary()
 
 
@@ -611,13 +611,13 @@ plt.show()
 
 # Please refer to "[this link](https://towardsdatascience.com/understanding-boxplots-5e2df7bcbd51)" for explanation of the boxplot. 
 # 
-# **After cleaning our data for analysis, we implemented a boxplot in Figure 1 where we see the following:**
+# After cleaning our data for analysis, we implemented a boxplot in Figure 7 where we see the following:
 # - All groups hover around the 4 to 5 rating once again
 # - All groups has the same variance level
 # - Incentive-Group shows happier customers with ratings of 7
 # - Interaction-group shows unhappy customers with ratings of 1
 # 
-# **Let's investigate through our statistical analysis below.**
+# Let's investigate through our statistical analysis below.
 
 # In[22]:
 
@@ -630,12 +630,12 @@ plt.ylabel("Ratings", rotation = 0, labelpad = 40)
 plt.show()
 
 
-# In Figure 7, we see a normal distribution of ratings from Question 6 for all groups.
+# In Figure 8, we see a normal distribution of ratings from Question 6 for all groups.
 
 # In[23]:
 
 
-model = ols("Q6 ~ Group", data).fit(cov_type='HC3')
+model = ols("Q6 ~ Group", data).fit(cov_type='HC3') # Allow Heteroscedasticity (fewer assumptions)
 model.summary()
 
 
@@ -719,7 +719,7 @@ plt.ylabel("Ratings", rotation = 0, labelpad = 40)
 plt.show()
 
 
-# In Figure 8, we see a pretty even distribution of ratings from Question 7 for all groups.
+# In Figure 9, we see a pretty even distribution of ratings from Question 7 for all groups.
 
 # In[26]:
 
@@ -784,9 +784,13 @@ model.summary()
 # Based on the complete statistical analysis, we recommend ABC Socks Company to implement the **Incentive-Based Approach** to increase the <u>overall</u> perception of the company's brand.
 # 
 # More specifically, we also conclude the following:
-# - Human-Focused Approach has the most impact on customer's <u>perception</u> of the company<br>(**Note**: Although our statistical analysis showed that Human-Focused Approach had the best impact, however we recommend using **Incentive-Based Approach** for better cost savings and slightly lower positive impact)
-# - Neither approaches has any impact on customer's <u>comprehension</u> of the company<br>(**Note**: Since neither approach had any positive impact, we recommend remaining with the control approach with zero cost for the company)
-# - Incentive-Based Approach has the most impact on customer's recommendations of the company
+# - Human-Focused Approach has the most impact on customer's <u>perception</u> of the company
+# 
+# (**Note**: Although our statistical analysis showed that Human-Focused Approach had the best impact, however we recommend using **Incentive-Based Approach** for better cost savings and slightly lower positive impact)
+# - Neither approaches has any impact on customer's <u>comprehension</u> of the company
+# 
+# (**Note**: Since neither approach had any positive impact, we recommend remaining with the control approach with zero cost for the company)
+# - Incentive-Based Approach has the most impact on customer's <u>recommendations</u> of the company
 # 
 # **Behavioural Analysis:**
 # 
